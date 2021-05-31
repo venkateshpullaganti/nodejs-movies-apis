@@ -1,0 +1,32 @@
+GET http://localhost:3002/movies/
+###
+
+POST http://localhost:3002/movies/
+Content-Type: application/json
+
+{
+  "directorId": 7,
+  "movieName": "hankok",
+  "leadActor": "Jeff Goldblum"
+}
+###
+PUT http://localhost:3002/movies/46/
+Content-Type: application/json
+
+{
+  "directorId": 7,
+  "movieName": "john carter",
+  "leadActor": "william"
+}
+###
+
+GET http://localhost:3002/movies/46/
+###
+
+DELETE http://localhost:3002/movies/47/
+###
+
+GET http://localhost:3002/directors/
+###
+
+GET http://localhost:3002/directors/1/movies/
